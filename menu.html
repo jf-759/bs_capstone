@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Fable & Froth</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: rgba(173, 216, 230, 0.6); /* Light pastel blue with transparency */
+            backdrop-filter: blur(8px); /* Softens the background */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #FFF8DC; /* Soft ivory or fairy dust color */
+            font-family: 'Georgia', serif; /* A classic font for a fairy-tale feel */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .navbar-brand:hover, .navbar-nav .nav-link:hover {
+            color: #8b8bc4; /* Light lavender on hover */
+        }
+        body {
+            background-color: rgb(96, 124, 109); /* Match the background color from index.html */
+        }
+        .hero {
+            background-image: url('/whimsical_forest.png');
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0;
+            text-align: center;
+            opacity: 0.8;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .display-4 {
+            color: rgb(128, 61, 9); /* Earthy, whimsical color for header */
+        }
+        .menu-section {
+            background-color: rgb(106, 146, 106); /* Match the background color from index.html */
+            padding: 60px 0;
+        }
+        .menu-item {
+            background-color: #FFF8DC; /* Soft ivory color for the menu items */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center; /* Center-align text and images */
+        }
+        .menu-img {
+            width: 100%;  /* Make the image fill the entire container width */
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensure the image covers the box without distortion */
+            border-radius: 10px; /* Optional: adds rounded corners to images */
+        }
+        .menu-item h4 {
+            color: rgb(128, 61, 9); /* Earthy color for item names */
+            margin-top: 15px; /* Adds spacing above the title */
+        }
+        .menu-item p {
+            margin-top: 10px; /* Adds some spacing above the description */
+        }
+        .footer {
+            background-color: #343a40;
+            color: rgb(255, 255, 255);
+            padding: 20px 0;
+        }
+        .footer a {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Navbar -->
+    <header class="py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Fable & Froth</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="display-4">Our Menu</h1>
+            <p class="lead">Delight in our carefully crafted beverages and freshly baked treats!</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="text-center mb-5 text-white">Our Delicious Offerings</h2>
+
+            <div class="row">
+                <!-- Coffee Item -->
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <img src="coffee.png" alt="Coffee" class="menu-img mb-3">
+                        <h4>Coffee</h4>
+                        <p>A rich, full-bodied coffee to warm your soul.</p>
+                        <p><strong>$3.50</strong></p>
+                    </div>
+                </div>
+                <!-- Tea Item -->
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <img src="milk_tea.png" alt="tea" class="menu-img mb-3">
+                        <h4>Tea</h4>
+                        <p>Freshly brewed, aromatic tea made from the finest leaves.</p>
+                        <p><strong>$2.50</strong></p>
+                    </div>
+                </div>
+                <!-- Pastries Item -->
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <img src="chocolate_croissant.png" alt="pastries" class="menu-img mb-3">
+                        <h4>Pastries</h4>
+                        <p>Delicious pastries freshly baked daily to pair with your drink.</p>
+                        <p><strong>$2.00 - $4.00</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Special Blends Item -->
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <img src="smoothie.png" alt="smoothies" class="menu-img mb-3">
+                        <h4>Special Blends</h4>
+                        <p>Our signature blends for a unique coffee or tea experience.</p>
+                        <p><strong>$5.00</strong></p>
+                    </div>
+                </div>
+                <!-- Hot Chocolate Item -->
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <img src="hot_cocoa.png" alt="Hot Chocolate" class="menu-img mb-3">
+                        <h4>Hot Chocolate</h4>
+                        <p>A smooth and creamy treat for chocolate lovers.</p>
+                        <p><strong>$3.00</strong></p>
+                    </div>
+                </div>
+                <!-- Iced Drinks Item -->
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <img src="cake.png" alt="cake" class="menu-img mb-3">
+                        <h4>Iced Drinks</h4>
+                        <p>Perfect for warm weather – chilled, refreshing beverages.</p>
+                        <p><strong>$3.50</strong></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Fable & Froth. All rights reserved.</p>
+            <div>
+                <a href="#" class="text-white mr-3">Privacy Policy</a>
+                <a href="#" class="text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Fable & Froth</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: rgba(173, 216, 230, 0.6); /* Light pastel blue with transparency */
+            backdrop-filter: blur(8px); /* Softens the background */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #FFF8DC; /* Soft ivory or fairy dust color */
+            font-family: 'Georgia', serif; /* A classic font for a fairy-tale feel */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .navbar-brand:hover, .navbar-nav .nav-link:hover {
+            color: #8b8bc4; /* Light lavender on hover */
+        }
+        body {
+            background-color: rgb(96, 124, 109); /* Same background color as index.html */
+        }
+        .hero {
+            background-image: url('/whimsical_forest.png');
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0;
+            text-align: center;
+            opacity: 0.8;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .display-4 {
+            color: rgb(128, 61, 9); /* Earthy, whimsical color for header */
+        }
+        .contact-section {
+            background-color: rgb(106, 146, 106); /* Same background color as index.html */
+            padding: 60px 0;
+        }
+        .contact-form {
+            background-color: #FFF8DC; /* Soft ivory for the form background */
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-control {
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: rgb(255, 255, 255);
+            padding: 20px 0;
+        }
+        .footer a {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Navbar -->
+    <header class="py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Fable & Froth</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="display-4">Get in Touch</h1>
+            <p class="lead">We'd love to hear from you! Fill out the form below to reach out.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="text-center mb-5 text-white">Contact Us</h2>
+
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="contact-form">
+                        <form action="submit_contact.php" method="POST">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Fable & Froth. All rights reserved.</p>
+            <div>
+                <a href="#" class="text-white mr-3">Privacy Policy</a>
+                <a href="#" class="text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
